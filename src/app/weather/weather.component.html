@@ -1,0 +1,32 @@
+<div class="mycontainer">
+    <div class="card text-white bg-primary m-5" style="max-width: 100%; max-width: 500px;">
+        <div class="card-header text-center">
+            <h2>{{city}}</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text"><strong>Summary:</strong> {{summary}}</p>
+
+            <p class="card-text"><strong>Temperature:</strong> {{temperature}} °{{units == 'imperial' ? 'F' : 'C'}}</p>
+            <p class="card-text"><strong>Feels like:</strong> {{feelsLikeTemp}} °{{units == 'imperial' ? 'F' : 'C'}}</p>
+            <p class="card-text"><strong>Pressure:</strong> {{pressure}} hPa</p>
+            <p class="card-text"><strong>Humidity:</strong> {{humidity}} %</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+            <form class="myRadioButtons">
+                <label class="radio-inline">
+                    <input type="radio" (change)="onRadioButtonChange()" name="unitsRadioButtons"
+                        [checked]="units=='imperial' ? true : false">°F
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" (change)="onRadioButtonChange()" name="unitsRadioButtons">°C
+                </label>
+            </form>
+            <form (ngSubmit)="onCitySubmit()" #cityForm="ngForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" [(ngModel)]="inputCity" name="city" placeholder="Enter city" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Get Weather</button>
+            </form>
+        </div>
+    </div>
+</div>

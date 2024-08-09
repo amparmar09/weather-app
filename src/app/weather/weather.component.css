@@ -1,0 +1,142 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/07/72/97/80/1000_F_772978027_esLKJK3gsf2BBYANagzgNFaIgpPfNaDE.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; 
+}
+
+
+.mycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 100%;
+}
+
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+
+.card-header {
+    background-color: rgba(38, 34, 52, 0.9); 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-bottom: 2px solid #0056b3;
+    text-align: center;
+}
+
+
+.card-body {
+    padding: 25px;
+}
+
+
+.card-text {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+
+.card-footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(240, 235, 233, 0.9); 
+}
+
+
+.myRadioButtons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+
+.radio-inline {
+    display: flex;
+    align-items: center;
+}
+
+.radio-inline input {
+    margin-right: 10px;
+}
+
+
+form .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .form-control {
+    border-radius: 6px;
+    border: 1px solid #e3e7eb;
+    padding: 12px;
+    font-size: 18px;
+}
+
+form .btn-primary {
+    border-radius: 6px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .mycontainer {
+        padding: 40px;
+    }
+
+    .card {
+        max-width: 700px;
+    }
+
+    .card-header h2 {
+        font-size: 28px;
+    }
+
+    .card-body .card-text {
+        font-size: 20px;
+    }
+
+    .form-group .form-control {
+        font-size: 18px;
+    }
+
+    .form .btn-primary {
+        font-size: 18px;
+        padding: 14px 28px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .mycontainer {
+        padding: 50px;
+    }
+
+    .card {
+        max-width: 800px;
+    }
+}
