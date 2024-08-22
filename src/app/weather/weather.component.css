@@ -79,6 +79,10 @@ form .form-group {
     margin-bottom: 20px;
 }
 
+ .btn btn-secondary mt-3 {
+    background-color: #db4437; 
+  }
+
 form .form-control {
     border-radius: 6px;
     border: 1px solid #e3e7eb;

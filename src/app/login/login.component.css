@@ -35,9 +35,7 @@
     color: #333;
   }
   
-  .login-container .sign-out-button {
-    background-color: #db4437; 
-  }
+  
   
   .login-container .sign-out-button:hover {
     background-color: #c1351d; 

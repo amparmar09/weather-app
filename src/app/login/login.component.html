@@ -1,12 +1,12 @@
 
 <div class="login-container">
-    <div *ngIf="user$ | async as user; else loggedOut">
-      <p class="welcome-message">Welcome, {{ user?.displayName }}!</p>
-      <button class="sign-out-button" (click)="signOut()">Sign out</button>
+    <div>
+      <p class="welcome-message">Welcome,</p>
+      <button (click)="googleLogin()">Sign in with Google</button>
+     <!--  <button class="sign-out-button">Sign out</button> -->
     </div>
-    <ng-template #loggedOut>
+    <ng-template>
       <p>Please sign in:</p>
-      <button (click)="signInWithGoogle()">Sign in with Google</button>
     </ng-template>
-  </div> 
+  </div>
   

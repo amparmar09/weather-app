@@ -2,10 +2,11 @@
     <div class="card text-white bg-primary m-5" style="max-width: 100%; max-width: 500px;">
         <div class="card-header text-center">
             <h2>{{city}}</h2>
+            
+            <p *ngIf="isLoggedIn" class="text-center">Welcome, {{username}}!</p>
         </div>
         <div class="card-body">
             <p class="card-text"><strong>Summary:</strong> {{summary}}</p>
-
             <p class="card-text"><strong>Temperature:</strong> {{temperature}} °{{units == 'imperial' ? 'F' : 'C'}}</p>
             <p class="card-text"><strong>Feels like:</strong> {{feelsLikeTemp}} °{{units == 'imperial' ? 'F' : 'C'}}</p>
             <p class="card-text"><strong>Pressure:</strong> {{pressure}} hPa</p>
@@ -27,6 +28,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Get Weather</button>
             </form>
+            <button *ngIf="isLoggedIn" (click)="signOut()" class="btn btn-secondary mt-3">Sign out</button>
         </div>
     </div>
 </div>
