@@ -4,7 +4,7 @@ export const environment = {
     appId: '1:688917035787:web:9a9dd53409b59686cc400e',
     databaseURL: 'https://weatherapp-1c768-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'weatherapp-1c768.appspot.com',
-    apiKey: 'AIzaSyCA5-_tF7wKpgSUtTdvm0wlBJvQOIrsCdw',
+    apiKey: '',
     authDomain: 'weatherapp-1c768.firebaseapp.com',
     messagingSenderId: '688917035787',
     measurementId: 'G-QL8DLSBT4H',
